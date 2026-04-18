@@ -43,14 +43,6 @@ Sistem ini menjamin integritas data tetap terjaga selama proses modding:
 
 ### Cara Penggunaan
 
-#### 1. Mode GUI (Rekomendasi)
-1. Jalankan `python mb_editor.py`.
-2. Klik **Open Archive (.p)** lalu pilih `data04.p`.
-3. Pilih file skrip (contoh: `00.TXT`) pada panel kiri.
-4. Ketik terjemahan pada kotak **↳** di bawah baris dialog yang dipilih.
-5. Klik **Repack Archive** untuk membuat file `.p` baru.
-
-#### 2. Mode CLI (Terminal)
 ```bash
 python mb_core.py unpack data04.p extracted/     # Mengekstrak isi archive
 python mb_core.py repack extracted/ data04.p     # Mengemas ulang folder
