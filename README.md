@@ -1,41 +1,37 @@
 # Melty Blood 2002 Archive Tools & Editor
 
-Kumpulan alat (tools) untuk melakukan modding dan lokalisasi pada game **Melty Blood (2002)**. Tool ini mendukung penuh proses ekstraksi, pengeditan teks melalui GUI, hingga pengemasan ulang (*repacking*) file archive `.p`.
+Kumpulan alat modding dan lokalisasi untuk game **Melty Blood (2002)**. Mendukung ekstraksi, pengeditan teks via GUI, hingga pengemasan ulang archive `.p` ke format aslinya.
 
 ---
 
-## Catatan Penting: Penggunaan Font
-Game ini menggunakan sistem encoding yang spesifik. **Huruf Latin/Alfabet standar (Half-width) tidak akan terbaca dengan benar atau bahkan tidak muncul di dalam game.** Anda **wajib** menggunakan karakter **Fullwidth (Zenkaku)** untuk semua teks terjemahan.
-- **Biasa:**
- "Di awal bulan Agustus."
-- **Fullwidth:**
- "Ｄｉ　ａｗａｌ　ｂｕｌａｎ　Ａｇｕｓｔｕｓ．"
+### Catatan Penting: Penggunaan Font
+Game ini menggunakan sistem encoding spesifik. **Huruf Latin standar (Half-width) tidak akan terbaca.** Wajib menggunakan karakter **Fullwidth (Zenkaku)** agar teks muncul di dalam game.
 
-Pastikan IME Anda dalam mode *Full-width* saat mengetik terjemahan di dalam editor.
+* **Biasa:** "Di awal bulan Agustus."
+* **Fullwidth:** "Ｄｉ　ａｗａｌ　ｂｕｌａｎ　Ａｇｕｓｔｕｓ．"
 
 ---
 
-## Hasil Analisis Archive (data04.p)
-Berdasarkan analisis teknis, file `data04.p` merupakan kontainer utama yang berisi aset-aset penting untuk lokalisasi:
-- **Total Isi:** 189 file (~40 MB).
-- **Aset Translatable:** 62 file `.TXT` berisi skrip dialog & narasi (~10.676 baris teks).
-- **Aset Lainnya:** 107 file `.EX3` (Animasi/Efek), 9 file `.WAV` (Audio), dan 1 file `.FNT` (Font).
-- **Versi:** Kompatibel dengan *Mirror Moon English Patch* (menggunakan format full-width ASCII dalam encoding Shift-JIS).
+### Analisis Archive (data04.p)
+File `data04.p` adalah kontainer utama untuk lokalisasi dengan rincian aset:
+* **Total Isi:** 189 file (~40 MB)
+* **Skrip Dialog:** 62 file `.TXT` (~10.676 baris teks)
+* **Aset Lain:** 107 file `.EX3`, 9 file `.WAV`, 1 file `.FNT`
+* **Versi:** Kompatibel dengan *Mirror Moon English Patch* (Shift-JIS)
 
 ---
 
-## Fitur Utama
-Tool ini dirancang untuk memastikan integritas data tetap terjaga selama proses modding:
-- **Unpack/Repack:** Ekstraksi dan pengemasan ulang archive .p yang sudah diverifikasi *byte-perfect*.
-- **Security:** Dekripsi dan enkripsi otomatis menggunakan key `0xE3DF59AC` dengan algoritma *filename-based*.
-- **GUI Editor:** Antarmuka pengeditan yang dilengkapi dengan *syntax highlighting* untuk skrip game.
-- **Translation Management:** Fitur auto-save ke format JSON (tanpa merusak file asli), *find & replace* global, serta tracker progres.
-- **Collaboration:** Mendukung ekspor/impor hasil terjemahan untuk memudahkan kerja tim.
+### Fitur Utama
+Sistem ini menjamin integritas data tetap terjaga selama proses modding:
+* **Unpack & Repack:** Ekstraksi dan pengemasan ulang yang terverifikasi *byte-perfect*.
+* **Keamanan:** Dekripsi dan enkripsi otomatis (Key: `0xE3DF59AC`) berbasis algoritma nama file.
+* **Editor GUI:** Antarmuka khusus dengan *syntax highlighting* skrip game.
+* **Manajemen Teks:** Auto-save ke JSON, fitur *find & replace* global, dan pelacak progres.
+* **Kolaborasi:** Fitur ekspor/impor hasil terjemahan untuk kerja tim.
 
 ---
 
-## Preview Interface
-
+### Preview Interface
 <div align="center">
   <table style="margin-left: auto; margin-right: auto;">
     <tr>
@@ -49,11 +45,17 @@ Tool ini dirancang untuk memastikan integritas data tetap terjaga selama proses 
 
 ---
 
-## Cara Penggunaan
+### Cara Penggunaan
 
-Metode paling mudah untuk menerjemahkan tanpa menyentuh kode teknis:
+#### 1. Mode GUI (Rekomendasi)
+1. Jalankan `python mb_editor.py`.
+2. Klik **Open Archive (.p)** lalu pilih `data04.p`.
+3. Pilih file skrip (contoh: `00.TXT`) pada panel kiri.
+4. Ketik terjemahan pada kotak **↳** di bawah baris dialog yang dipilih.
+5. Klik **Repack Archive** untuk membuat file `.p` baru.
 
-   ```bash 
-   python mb_core.py unpack data04.p extracted/   # Mengekstrak semua isi archive
-   python mb_core.py repack extracted/ data04_new.p  # Mengemas ulang folder menjadi archive .p
-   python mb_core.py info data04.p                # Melihat daftar file dan informasi isi archive
+#### 2. Mode CLI (Terminal)
+```bash
+python mb_core.py unpack data04.p extracted/     # Mengekstrak isi archive
+python mb_core.py repack extracted/ data04.p     # Mengemas ulang folder
+python mb_core.py info data04.p                  # Melihat informasi isi archive
