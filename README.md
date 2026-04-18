@@ -51,9 +51,7 @@ Tool ini dirancang untuk memastikan integritas data tetap terjaga selama proses 
 
 ## Cara Penggunaan
 
-### 1. Menggunakan GUI Editor (Rekomendasi)
 Metode paling mudah untuk menerjemahkan tanpa menyentuh kode teknis:
-1. Jalankan editor:
 
    ```bash 
    python mb_core.py unpack data04.p extracted/   # Mengekstrak semua isi archive
