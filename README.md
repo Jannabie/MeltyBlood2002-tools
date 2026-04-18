@@ -6,8 +6,8 @@ Kumpulan alat (tools) untuk melakukan modding dan lokalisasi pada game **Melty B
 
 ## Catatan Penting: Penggunaan Font
 Game ini menggunakan sistem encoding yang spesifik. **Huruf Latin/Alfabet standar (Half-width) tidak akan terbaca dengan benar atau bahkan tidak muncul di dalam game.** Anda **wajib** menggunakan karakter **Fullwidth (Zenkaku)** untuk semua teks terjemahan.
-- **Biasa :** Di awal bulan Agustus.
-- **Fullwidth :** Ｄｉ　ａｗａｌ　ｂｕｌａｎ　Ａｇｕｓｔｕｓ．
+- **Biasa:** "Di awal bulan Agustus."
+- **Fullwidth:** "Ｄｉ　ａｗａｌ　ｂｕｌａｎ　Ａｇｕｓｔｕｓ．"
 
 Pastikan IME Anda dalam mode *Full-width* saat mengetik terjemahan di dalam editor.
 
