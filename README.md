@@ -2,14 +2,12 @@
 
 Kumpulan alat (tools) untuk melakukan modding dan lokalisasi pada game **Melty Blood (2002)**. Tool ini mendukung penuh proses ekstraksi, pengeditan teks melalui GUI, hingga pengemasan ulang (*repacking*) file archive `.p`.
 
-**Repository:** [Jannabie/MeltyBlood2002-tools](https://github.com/Jannabie/MeltyBlood2002-tools)
-
 ---
 
 ## Catatan Penting: Penggunaan Font
 Game ini menggunakan sistem encoding yang spesifik. **Huruf Latin/Alfabet standar (Half-width) tidak akan terbaca dengan benar atau bahkan tidak muncul di dalam game.** Anda **wajib** menggunakan karakter **Fullwidth (Zenkaku)** untuk semua teks terjemahan.
-- **Salah:** Di awal bulan Agustus.
-- **Benar:** Ｄｉ　ａｗａｌ　ｂｕｌａｎ　Ａｇｕｓｔｕｓ．
+ **Salah:** Di awal bulan Agustus.
+ **Benar:** Ｄｉ　ａｗａｌ　ｂｕｌａｎ　Ａｇｕｓｔｕｓ．
 
 Pastikan IME Anda dalam mode *Full-width* saat mengetik terjemahan di dalam editor.
 
