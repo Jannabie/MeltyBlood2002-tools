@@ -25,10 +25,7 @@ File `data04.p` adalah kontainer utama untuk lokalisasi dengan rincian aset:
 Sistem ini menjamin integritas data tetap terjaga selama proses modding:
 * **Unpack & Repack:** Ekstraksi dan pengemasan ulang yang terverifikasi *byte-perfect*.
 * **Keamanan:** Dekripsi dan enkripsi otomatis (Key: `0xE3DF59AC`) berbasis algoritma nama file.
-* **Editor GUI:** Antarmuka khusus dengan *syntax highlighting* skrip game.
-* **Manajemen Teks:** Auto-save ke JSON, fitur *find & replace* global, dan pelacak progres.
-* **Kolaborasi:** Fitur ekspor/impor hasil terjemahan untuk kerja tim.
-
+* **Editor GUI:** Antarmuka khusus dengan 
 ---
 
 ### Preview Interface
