@@ -1,4 +1,4 @@
-# Melty Blood 2002 — Archive Tools & Editor
+# Melty Blood 2002 Archive Tools & Editor
 
 A tool for modding and localizing **Melty Blood (2002)** — from extracting archives, editing text through a GUI, to repacking back into the original format.
 
